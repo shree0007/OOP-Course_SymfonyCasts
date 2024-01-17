@@ -36,20 +36,30 @@ public function getNameAndSpace($useShortFormat){
 
 }
 
+function printShipSummary($someShip){
+    echo "Ship name: ". $someShip->name;
+echo '<hr/>';
+$someShip->sayHello();
+echo '<hr/>';
+echo $someShip->getName();
+echo '<hr/>';
+var_dump($someShip->weaponPower);
+echo '<hr/>';
+echo $someShip->getNameAndSpace(false);
+echo '<hr/>';
+echo $someShip->getNameAndSpace(true);
+}
 
 $myship=new Ship();
 $myship->name='Jedi Starship';
 $myship->weaponPower=10;
 
+$otherShip=new Ship();
+$otherShip->name='Imperial Shuttle';
+$otherShip->weaponPower=5;
+$otherShip->strength=50;
 
-echo "Ship name: ". $myship->name;
+printShipSummary($myship);
 echo '<hr/>';
-$myship->sayHello();
-echo '<hr/>';
-echo $myship->getName();
-echo '<hr/>';
-var_dump($myship->weaponPower);
-echo '<hr/>';
-echo $myship->getNameAndSpace(false);
-echo '<hr/>';
-echo $myship->getNameAndSpace(true);
+printShipSummary($otherShip);
+
