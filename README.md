@@ -27,5 +27,6 @@ Pull up the new site by going to:
 
 ## NOTES
 - Class is a prototype/blueprint of object that contains properties and methods.
-- 
+- Access Modifiers:Public, Private, and Protected. `Public` properties and methods are accessible from both inside and outside the class.It is a default visibility if no access modifier is specified. `Private` are only accessible only within the class that defines them. `Protected` are only accessible within the class itself and by inhertiting classes or child classes that extends the parent class.
+
 
