@@ -34,6 +34,10 @@ public function getNameAndSpace($useShortFormat){
   
 }
 
+public function doesGivenShipHaveMoreStrength($givenShip){
+    return $givenShip->strength > $this->strength;
+}
+
 }
 
 function printShipSummary($someShip){
@@ -54,6 +58,7 @@ $myship=new Ship();
 $myship->name='Jedi Starship';
 $myship->weaponPower=10;
 
+
 $otherShip=new Ship();
 $otherShip->name='Imperial Shuttle';
 $otherShip->weaponPower=5;
@@ -62,4 +67,11 @@ $otherShip->strength=50;
 printShipSummary($myship);
 echo '<hr/>';
 printShipSummary($otherShip);
+echo '<hr/>';
+
+if($myship->doesGivenShipHaveMoreStrength($otherShip)){
+    echo $otherShip->name.' has more strength';
+}else{
+    echo $myship->name. ' has more strength';
+}
 
