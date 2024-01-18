@@ -25,8 +25,9 @@ Pull up the new site by going to:
     http://localhost:8000
 
 
-## NOTES
+## PERSONAL NOTES
 - Class is a prototype/blueprint of object that contains properties and methods.
 - Access Modifiers:Public, Private, and Protected. `Public` properties and methods are accessible from both inside and outside the class.It is a default visibility if no access modifier is specified. `Private` are only accessible only within the class that defines them. `Protected` are only accessible within the class itself and by inhertiting classes or child classes that extends the parent class.
+- When the properties are set private, use `setter` and `getter` methods for the controlled acces of those private properties.These methods provide a way to control how the internal state of an object is modified (set) or accessed (get). Some of the benifits of these methods are: `Encapsulation, Controlled Access, Flexibility, Security, and Ease of Maintenance`.
 
 
