@@ -38,4 +38,8 @@ class BattleResult{
     {
         return $this->losingShip;
     }
+
+    public function isThereAWinner(){
+    return $this->getWinningShip()!==null;
+    }
 }
